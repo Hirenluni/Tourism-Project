@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="admin-dashboard.html" class="active">🏠 Dashboard</a></li>
+            <li><a href="manage-packages.html">📦 Manage Packages</a></li>
+            <li><a href="manage-users.html">👤 Manage Users</a></li>
+            <li><a href="edit-pages.html">📝 Edit Pages</a></li>
+            <li><a href="settings.html">⚙️ Settings</a></li>
+            <li><a href="../index.html">🔙 Back to Site</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-content">
+        <header class="admin-header">
+            <h1>Welcome, Admin</h1>
+            <p>Manage website content, users, and bookings.</p>
+        </header>
+
+        <!-- Dashboard Overview Section -->
+        <section class="dashboard-overview">
+            <div class="overview-box">
+                <h3>📦 Total Packages</h3>
+                <p>15</p>
+            </div>
+            <div class="overview-box">
+                <h3>👤 Registered Users</h3>
+                <p>250</p>
+            </div>
+            <div class="overview-box">
+                <h3>🛒 Total Bookings</h3>
+                <p>120</p>
+            </div>
+            <div class="overview-box">
+                <h3>💬 Feedbacks</h3>
+                <p>35</p>
+            </div>
+        </section>
+
+        <!-- Recent Bookings Section -->
+        <section class="recent-bookings">
+            <h2>Recent Bookings</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Package</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Paris Tour</td>
+                        <td>2025-03-10</td>
+                        <td>Confirmed</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Maldives Trip</td>
+                        <td>2025-02-28</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>Mike Johnson</td>
+                        <td>Swiss Alps Adventure</td>
+                        <td>2025-04-15</td>
+                        <td>Confirmed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="admin-footer">
+        <p>© 2025 Admin Dashboard - TravelWorld</p>
+    </footer>
+
+</body>
+</html>

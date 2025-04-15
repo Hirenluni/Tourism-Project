@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Your Package</h1>
+   
+    <nav>
+        <div class="logo">
+            <a href="../index.html">🌍 TravelWorld</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../pages/index.html">Home</a></li>
+            <li><a href="../pages/packages.html">Packages</a></li>
+            <li><a href="../pages/gallery.html">Gallery</a></li>
+            <li><a href="../pages/book-now.html">Book Now</a></li>
+            <li><a href="../pages/contact.html">Contact Us</a></li>
+            <li><a href="../pages/login.html" class="btn-login">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <section class="booking-form">
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="package">Select Package:</label>
+            <select id="package">
+                <option>Bali Adventure</option>
+                <option>Paris Getaway</option>
+            </select>
+
+            <label for="guide">Need a Local Guide?</label>
+            <select id="guide">
+                <option>No</option>
+                <option>Yes</option>
+            </select>
+
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </section>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const packageName = urlParams.get('package');
+        if (packageName) {
+            document.getElementById('package').value = packageName;
+        }
+    </script>
+
+    <footer>
+        <p>© 2025 Tourism Package Booking</p>
+    </footer>
+</body>
+</html>

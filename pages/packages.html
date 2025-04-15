@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Packages</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <!-- 🌍 Header -->
+    <header>
+        <div class="logo">
+            <a href="../index.html">🌍 TravelWorld</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../pages/index.html">Home</a></li>
+                <li><a href="../pages/packages.html" class="active">Packages</a></li>
+                <li><a href="../pages/gallery.html">Gallery</a></li>
+                <li><a href="../pages/wishlist.html">Wishlist</a></li>
+                <li><a href="../pages/contact.html">Contact Us</a></li>
+                <li><a href="../pages/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ✈️ Available Packages Section -->
+    <main>
+        <h2>Available Travel Packages</h2>
+
+        <div class="packages-container">
+            <div class="package">
+                <img src="../assets/images/destination1.jpg" alt="Paris">
+                <h3>Paris Tour</h3>
+                <p>Explore the beauty of Paris with our exciting travel package.</p>
+                <button class="book-now" onclick="openBookingForm('Paris Tour')">Book Now</button>
+            </div>
+
+            <div class="package">
+                <img src="../assets/images/destination2.jpg" alt="Maldives">
+                <h3>Maldives Trip</h3>
+                <p>Enjoy a relaxing vacation in the Maldives.</p>
+                <button class="book-now" onclick="openBookingForm('Maldives Trip')">Book Now</button>
+            </div>
+
+            <div class="package">
+                <img src="../assets/images/destination3.jpg" alt="Swiss Alps">
+                <h3>Swiss Alps Adventure</h3>
+                <p>Experience the beauty of the Swiss Alps.</p>
+                <button class="book-now" onclick="openBookingForm('Swiss Alps Adventure')">Book Now</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- 🏨 Booking Popup -->
+    <div id="booking-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeBookingForm()">&times;</span>
+            <h2>Book Your Package</h2>
+            <p id="selected-package"></p>
+            <label for="travel-date">Select Date:</label>
+            <input type="date" id="travel-date">
+            <button class="confirm-booking">Confirm Booking</button>
+            <button class="cancel-booking" onclick="closeBookingForm()">Cancel</button>
+        </div>
+    </div>
+
+    <!-- 🌍 Footer -->
+    <footer>
+        <p>© 2025 Tourism Package Booking</p>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+
+</body>
+</html>

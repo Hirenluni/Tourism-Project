@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist - Tourism Booking</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<h2>My Wishlist</h2>
+<div id="wishlist-container"></div>
+
+<!-- Link script.js -->
+<script src="../assets/js/script.js"></script>
+
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="wishlist.html" class="active">Wishlist</a></li>
+                <li><a href="book-now.html">Book Now</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Your Wishlist</h2>
+
+        <div class="wishlist-container">
+            <div class="wishlist-item">
+                <img src="../assets/images/destination1.jpg" alt="Destination 1">
+                <h3>Paris Tour</h3>
+                <p>Explore the beauty of Paris with an exciting travel package.</p>
+                <button class="book-now">Book Now</button>
+                <button class="remove-wishlist">Remove</button>
+            </div>
+
+            <div class="wishlist-item">
+                <img src="../assets/images/destination2.jpg" alt="Destination 2">
+                <h3>Maldives Trip</h3>
+                <p>Enjoy a relaxing vacation in the Maldives with stunning beaches.</p>
+                <button class="book-now">Book Now</button>
+                <button class="remove-wishlist">Remove</button>
+            </div>
+
+            <div class="wishlist-item">
+                <img src="../assets/images/destination3.jpg" alt="Destination 3">
+                <h3>Swiss Alps Adventure</h3>
+                <p>Experience an unforgettable adventure in the Swiss Alps.</p>
+                <button class="book-now">Book Now</button>
+                <button class="remove-wishlist">Remove</button>
+            </div>
+        </div>
+
+    </main>
+
+<!-- Booking Popup -->
+<div id="booking-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closeBookingForm()">&times;</span>
+        <h2>Book Your Package</h2>
+        <p id="selected-package"></p>
+        <label for="travel-date">Select Date:</label>
+        <input type="date" id="travel-date">
+        <button class="confirm-booking">Confirm Booking</button>
+        <button class="cancel-booking" onclick="closeBookingForm()">Cancel</button>
+    </div>
+</div>
+
+<!-- Link script.js -->
+<script src="../assets/js/script.js"></script>
+
+
+</body>
+</html>
